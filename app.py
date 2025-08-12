@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import json
 import geopandas as gpd
 
 # Configure the page
@@ -121,7 +119,7 @@ STAC metadata record available on the FAIRiCUBE Data Catalogue: https://catalog.
 
 ## Example usage
 
-Clustering analysis of European cities: check out this interactive demo notebook: `notebooks\demo\cities_clustering_interactive_demo.ipynb`.
+Clustering analysis of European cities: check out this interactive demo notebook: `notebooks\\demo\\cities_clustering_interactive_demo.ipynb`.
 
 ## License
 
