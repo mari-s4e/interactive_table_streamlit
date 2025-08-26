@@ -48,7 +48,7 @@ def load_data():
     # Example data - replace with your actual data loading
     # read data from geojson
     data_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/55742139337e20a1708ab3193ec26295d0a0c5c5/data/city_features_collection/city_features_collection_v0.1.geojson?raw=true"
-    codebook_path = "city_features_collection/city_features_collection_codebook.csv"
+    codebook_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_codebook.csv?raw=true"
     main_df = gpd.read_file(data_path)
 
     # read column descriptions from CSV
