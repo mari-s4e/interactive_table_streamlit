@@ -47,7 +47,7 @@ def load_data():
     """
     # Example data - replace with your actual data loading
     # read data from geojson
-    data_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/55742139337e20a1708ab3193ec26295d0a0c5c5/data/city_features_collection/city_features_collection_v0.1.geojson?raw=true"
+    data_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/98326197f496483787636876556fcbdd40923c93/data/city_features_collection/city_features_collection_v0.1.geojson?raw=true"
     codebook_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_codebook.csv?raw=true"
     main_df = gpd.read_file(data_path)
 
@@ -108,10 +108,10 @@ For detailed specifications of all indicators, refer to the comprehensive codebo
 City boundaries and selection criteria are based on the Eurostat Urban Atlas, ensuring consistency with official European urban statistical frameworks. The dataset covers cities across all EU member states plus additional European countries included in the Urban Audit.
 
 **Source geometries available in multiple coordinate systems:**
-- EPSG:4326 (WGS84): <https://gisco-services.ec.europa.eu/distribution/v2/urau/geojson/URAU_RG_01M_2018_4326_CITIES.geojson>
-- EPSG:3035 (European grid): <https://gisco-services.ec.europa.eu/distribution/v2/urau/geojson/URAU_RG_01M_2018_3035_CITIES.geojson>
+- EPSG:4326 (WGS84): <https://gisco-services.ec.europa.eu/distribution/v2/urau/geojson/URAU_RG_100K_2018_4326_CITIES.geojson>
+- EPSG:3035 (European grid): <https://gisco-services.ec.europa.eu/distribution/v2/urau/geojson/URAU_RG_100K_2018_3035_CITIES.geojson>
 
-Additional information on the Urban Audit methodology and city selection criteria is available from [Eurostat GISCO](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/urban-audit).
+Additional information on the Urban Audit methodology and city selection criteria is available from [Eurostat GISCO](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units).
 
 ## Metadata
 
