@@ -14,24 +14,24 @@ st.markdown(
     """
 <style>
     .column-info {
-        background-color: #f0f2f6;
+        background-color: light-dark(#f0f2f6, #2a2d3a);
         padding: 1rem;
         border-radius: 0.5rem;
         margin: 1rem 0;
+        color: light-dark(#333, #e0e0e0);
     }
     .notebook-link {
-        background-color: #4bbfff;
-        color: white;
+        background-color: light-dark(#ff6b6b, #e55555);
+        color: white!important;
         padding: 0.5rem 1rem;
         border-radius: 0.25rem;
-        text-decoration: none;
+        text-decoration: none!important;
         display: inline-block;
         margin-top: 0.5rem;
     }
     .notebook-link:hover {
-        background-color: #ff6b6b;
         color: white;
-        text-decoration: none;
+        text-decoration: underline!important;
     }
 </style>
 """,
@@ -67,7 +67,7 @@ def main():
     a comprehensive dataset providing standardized indicators for approximately 700 European cities, offering a systematic overview of urban characteristics across Europe for the reference year 2018.
     It allows users to explore city features, view column descriptions, and access processing notebooks for each feature.
     
-    For more information, click below or visit the [GitHub repository](https://github.com/FAIRiCUBE/uc1-urban-climate).
+    For more information, click below or visit our GitHub repository [FAIRiCUBE - Urban adaptation to climate change](https://github.com/FAIRiCUBE/uc1-urban-climate).
     """
     )
 
@@ -75,11 +75,11 @@ def main():
     with st.expander("More Information", expanded=False):
         st.markdown(
             """
-## Overview
+### Overview
 
 The European Cities Atlas integrates multiple data sources to create a unified resource for urban research and policy analysis. This dataset enables comparative studies across European cities by providing consistent metrics on physical, environmental, and socioeconomic characteristics.
 
-## Indicators
+### Indicators
 
 The dataset encompasses three core thematic areas:
 
@@ -101,9 +101,11 @@ The dataset encompasses three core thematic areas:
 - Income levels and health indicators
 - Urban development patterns
 
-For detailed specifications of all indicators, refer to the comprehensive codebook `cities_features_collection_codebook.csv`. Categorical feature definitions are provided in accompanying codelists `codelist_<feature>.csv`.
+For detailed specifications of all indicators, refer to the comprehensive codebook 
+[`cities_features_collection_codebook.csv`](https://github.com/FAIRiCUBE/uc1-urban-climate/blob/98326197f496483787636876556fcbdd40923c93/data/city_features_collection/city_features_collection_codebook.csv). 
+Categorical feature definitions are provided in accompanying codelists `codelist_<feature>.csv`.
 
-## Geographic Coverage
+#### Geographic Coverage
 
 City boundaries and selection criteria are based on the Eurostat Urban Atlas, ensuring consistency with official European urban statistical frameworks. The dataset covers cities across all EU member states plus additional European countries included in the Urban Audit.
 
@@ -111,19 +113,19 @@ City boundaries and selection criteria are based on the Eurostat Urban Atlas, en
 - EPSG:4326 (WGS84): <https://gisco-services.ec.europa.eu/distribution/v2/urau/geojson/URAU_RG_100K_2018_4326_CITIES.geojson>
 - EPSG:3035 (European grid): <https://gisco-services.ec.europa.eu/distribution/v2/urau/geojson/URAU_RG_100K_2018_3035_CITIES.geojson>
 
-Additional information on the Urban Audit methodology and city selection criteria is available from [Eurostat GISCO](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units).
+Read more on the Urban Audit methodology and city selection criteria at [Eurostat GISCO](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units).
 
-## Metadata
+### Additional information
 
-STAC metadata record available on the FAIRiCUBE Data Catalogue: https://catalog.eoxhub.fairicube.eu/collections/index/items/city_features_collection
+**Metadata**: STAC metadata record available on the FAIRiCUBE Data Catalogue: https://catalog.eoxhub.fairicube.eu/collections/index/items/city_features_collection
 
-## Example usage
+**Example usage**: check out this interactive demo notebook on clustering analysis of European cities: [`notebooks\\demo\\cities_clustering_interactive_demo.ipynb`](https://github.com/FAIRiCUBE/uc1-urban-climate/blob/98326197f496483787636876556fcbdd40923c93/notebooks/demo/cities_clustering_interactive_demo.ipynb).
 
-Clustering analysis of European cities: check out this interactive demo notebook: `notebooks\\demo\\cities_clustering_interactive_demo.ipynb`.
+**License**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-## License
+**Funding**: This dataset was developed in the context of the [FAIRiCUBE project](https://fairicube.nilu.no/) funded by the European Union's Horizon 2020 research and innovation programme under grant agreement No 101059238.
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)""")
+""")
         
     # Load data
     df, column_descriptions = load_data()
