@@ -8,7 +8,7 @@ Visit the Interactive table viewer at [euopean-cities-atlas.streamlit.app](https
 A comprehensive dataset providing standardized indicators for approximately 700 European cities, offering a systematic overview of urban characteristics across Europe for the reference year 2018.
 A city consists of 1 or more small spatial units with at least 50% of their population in an urban centre.
 
-More information at [FAIRiCUBE/uc1-urban-climate/data/city_features_collection](https://github.com/FAIRiCUBE/uc1-urban-climate/tree/master/data/city_features_collection)
+More information at [FAIRiCUBE/uc1-urban-climate/data/eu_cities_atlas](https://github.com/FAIRiCUBE/uc1-urban-climate/tree/master/data/eu_cities_atlas)
 
 ## Credits
 

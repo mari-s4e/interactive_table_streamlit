@@ -47,8 +47,8 @@ def load_data():
     """
     # Example data - replace with your actual data loading
     # read data from geojson
-    data_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/98326197f496483787636876556fcbdd40923c93/data/city_features_collection/city_features_collection_v0.1.geojson?raw=true"
-    codebook_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/master/data/city_features_collection/city_features_collection_codebook.csv?raw=true"
+    data_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/78cbc85cb5af0b5d622f39bb9645d5cf3584227b/data/eu_cities_atlas/eu_cities_atlas_v1.geojson?raw=true"
+    codebook_path = "https://github.com/FAIRiCUBE/uc1-urban-climate/blob/78cbc85cb5af0b5d622f39bb9645d5cf3584227b/data/eu_cities_atlas/eu_cities_atlas_codebook.csv?raw=true"
     main_df = gpd.read_file(data_path)
 
     # read column descriptions from CSV
@@ -102,7 +102,7 @@ The dataset encompasses three core thematic areas:
 - Urban development patterns
 
 For detailed specifications of all indicators, refer to the comprehensive codebook 
-[`cities_features_collection_codebook.csv`](https://github.com/FAIRiCUBE/uc1-urban-climate/blob/98326197f496483787636876556fcbdd40923c93/data/city_features_collection/city_features_collection_codebook.csv). 
+[`cities_features_collection_codebook.csv`](https://github.com/FAIRiCUBE/uc1-urban-climate/blob/78cbc85cb5af0b5d622f39bb9645d5cf3584227b/data/eu_cities_atlas/eu_cities_atlas_codebook.csv). 
 Categorical feature definitions are provided in accompanying codelists `codelist_<feature>.csv`.
 
 #### Geographic Coverage
@@ -117,7 +117,7 @@ Read more on the Urban Audit methodology and city selection criteria at [Eurosta
 
 ### Additional information
 
-**Metadata**: STAC metadata record available on the FAIRiCUBE Data Catalogue: https://catalog.eoxhub.fairicube.eu/collections/index/items/city_features_collection
+**Metadata**: STAC metadata record available on the FAIRiCUBE Data Catalogue: https://catalog.eoxhub.fairicube.eu/collections/index/items/eu_cities_atlas
 
 **Example usage**: check out this interactive demo notebook on clustering analysis of European cities: [`notebooks\\demo\\cities_clustering_interactive_demo.ipynb`](https://github.com/FAIRiCUBE/uc1-urban-climate/blob/98326197f496483787636876556fcbdd40923c93/notebooks/demo/cities_clustering_interactive_demo.ipynb).
 
